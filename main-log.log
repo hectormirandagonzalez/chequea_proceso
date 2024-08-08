@@ -1,0 +1,728 @@
+2024-06-23 17:01:10,336 - INFO - HOST: localhost
+2024-06-23 17:01:10,336 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-06-23 17:01:10,336 - INFO - Added job "scheduled_task" to job store "default"
+2024-06-23 17:01:10,336 - INFO - Scheduler started
+2024-06-23 17:01:35,353 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-23 17:01:35 -04)" (scheduled at 2024-06-23 17:01:35.336134-04:00)
+2024-06-23 17:01:35,748 - ERROR - No module named 'psycopg2'
+2024-06-23 17:01:35,748 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-23 17:06:35 -04)" executed successfully
+2024-06-23 17:02:14,278 - INFO - Scheduler has been shut down
+2024-06-23 17:04:50,373 - INFO - HOST: localhost
+2024-06-23 17:04:50,373 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-06-23 17:04:50,373 - INFO - Added job "scheduled_task" to job store "default"
+2024-06-23 17:04:50,373 - INFO - Scheduler started
+2024-06-23 17:05:15,374 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-23 17:05:15 -04)" (scheduled at 2024-06-23 17:05:15.373494-04:00)
+2024-06-23 17:05:40,352 - ERROR - No module named 'psycopg2'
+2024-06-23 17:05:40,352 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-23 17:10:15 -04)" executed successfully
+2024-06-23 17:06:04,173 - INFO - Scheduler has been shut down
+2024-06-29 20:38:39,307 - INFO - HOST: 192.9.157.166
+2024-06-29 20:38:39,308 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-06-29 20:38:39,309 - INFO - Added job "scheduled_task" to job store "default"
+2024-06-29 20:38:39,309 - INFO - Scheduler started
+2024-06-29 20:39:04,318 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-29 20:39:04 -04)" (scheduled at 2024-06-29 20:39:04.307097-04:00)
+2024-06-29 20:39:04,358 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-29 20:44:04 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 28, in scheduled_task
+    revisa_atraso()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 187, in revisa_atraso
+    engine2 = create_engine(conexion).execution_options(autocommit=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 599, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\dialects\postgresql\psycopg2.py", line 690, in import_dbapi
+    import psycopg2
+ModuleNotFoundError: No module named 'psycopg2'
+2024-06-29 20:39:33,964 - INFO - Scheduler has been shut down
+2024-06-29 20:40:43,470 - INFO - HOST: 192.9.157.166
+2024-06-29 20:40:43,470 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-06-29 20:40:43,471 - INFO - Added job "scheduled_task" to job store "default"
+2024-06-29 20:40:43,471 - INFO - Scheduler started
+2024-06-29 20:41:08,479 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-29 20:41:08 -04)" (scheduled at 2024-06-29 20:41:08.470886-04:00)
+2024-06-29 20:41:12,480 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-06-29 20:46:08 -04)" executed successfully
+2024-06-29 20:41:54,914 - INFO - Scheduler has been shut down
+2024-07-03 20:49:41,119 - INFO - HOST: 192.9.157.166
+2024-07-03 20:49:41,128 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-03 20:49:41,128 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-03 20:49:41,128 - INFO - Scheduler started
+2024-07-03 20:50:06,138 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-03 20:50:06 -04)" (scheduled at 2024-07-03 20:50:06.119958-04:00)
+2024-07-03 20:50:08,824 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-03 20:55:06 -04)" executed successfully
+2024-07-03 20:50:16,377 - INFO - Scheduler has been shut down
+2024-07-16 19:48:51,855 - INFO - HOST: 192.9.157.166
+2024-07-16 19:48:51,858 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-16 19:48:51,861 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-16 19:48:51,861 - INFO - Scheduler started
+2024-07-16 19:49:16,866 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-16 19:49:16 -04)" (scheduled at 2024-07-16 19:49:16.855478-04:00)
+2024-07-16 19:49:19,558 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-16 19:54:16 -04)" executed successfully
+2024-07-16 19:49:46,217 - INFO - Scheduler has been shut down
+2024-07-17 19:14:56,160 - INFO - HOST: 192.9.157.166
+2024-07-17 19:14:56,161 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-17 19:14:56,162 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-17 19:14:56,162 - INFO - Scheduler started
+2024-07-17 19:15:21,175 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-17 19:15:21 -04)" (scheduled at 2024-07-17 19:15:21.160817-04:00)
+2024-07-17 19:15:23,842 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-17 19:20:21 -04)" executed successfully
+2024-07-17 19:16:43,020 - INFO - Scheduler has been shut down
+2024-07-23 19:04:37,845 - INFO - HOST: 192.9.157.166
+2024-07-23 19:04:37,850 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-23 19:04:37,850 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-23 19:04:37,850 - INFO - Scheduler started
+2024-07-23 19:05:02,857 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 19:05:02 -04)" (scheduled at 2024-07-23 19:05:02.845418-04:00)
+2024-07-23 19:05:05,520 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 19:10:02 -04)" executed successfully
+2024-07-23 19:05:17,439 - INFO - Scheduler has been shut down
+2024-07-23 20:11:15,113 - INFO - HOST: 192.9.157.166
+2024-07-23 20:11:15,113 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-23 20:11:15,113 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-23 20:11:15,113 - INFO - Scheduler started
+2024-07-23 20:11:40,119 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 20:11:40 -04)" (scheduled at 2024-07-23 20:11:40.113321-04:00)
+2024-07-23 20:11:42,987 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 20:16:40 -04)" executed successfully
+2024-07-23 20:12:11,081 - INFO - Scheduler has been shut down
+2024-07-23 21:15:40,561 - INFO - HOST: 192.9.157.166
+2024-07-23 21:15:40,561 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-23 21:15:40,561 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-23 21:15:40,561 - INFO - Scheduler started
+2024-07-23 21:16:05,569 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 21:16:05 -04)" (scheduled at 2024-07-23 21:16:05.561455-04:00)
+2024-07-23 21:16:08,321 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 21:21:05 -04)" executed successfully
+2024-07-23 21:16:14,007 - INFO - Scheduler has been shut down
+2024-07-23 21:20:59,168 - INFO - HOST: 192.9.157.166
+2024-07-23 21:20:59,168 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-23 21:20:59,168 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-23 21:20:59,168 - INFO - Scheduler started
+2024-07-23 21:21:24,177 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 21:21:24 -04)" (scheduled at 2024-07-23 21:21:24.168461-04:00)
+2024-07-23 21:21:26,959 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-23 21:26:24 -04)" executed successfully
+2024-07-23 21:21:31,222 - INFO - Scheduler has been shut down
+2024-07-25 20:18:03,707 - INFO - HOST: 192.9.157.166
+2024-07-25 20:18:03,709 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-25 20:18:03,711 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-25 20:18:03,711 - INFO - Scheduler started
+2024-07-25 20:18:28,715 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:18:28 -04)" (scheduled at 2024-07-25 20:18:28.707240-04:00)
+2024-07-25 20:18:31,503 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:23:28 -04)" executed successfully
+2024-07-25 20:23:28,714 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:28:28 -04)" (scheduled at 2024-07-25 20:23:28.707240-04:00)
+2024-07-25 20:23:31,416 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:28:28 -04)" executed successfully
+2024-07-25 20:28:28,712 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:33:28 -04)" (scheduled at 2024-07-25 20:28:28.707240-04:00)
+2024-07-25 20:28:31,463 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:33:28 -04)" executed successfully
+2024-07-25 20:32:30,174 - INFO - Scheduler has been shut down
+2024-07-25 20:39:14,985 - INFO - HOST: 192.9.157.166
+2024-07-25 20:39:14,986 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-25 20:39:14,988 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-25 20:39:14,988 - INFO - Scheduler started
+2024-07-25 20:39:39,988 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:39:39 -04)" (scheduled at 2024-07-25 20:39:39.985098-04:00)
+2024-07-25 20:39:42,777 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:44:39 -04)" executed successfully
+2024-07-25 20:39:45,976 - INFO - Scheduler has been shut down
+2024-07-25 20:47:29,193 - INFO - HOST: 192.9.157.166
+2024-07-25 20:47:29,194 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-25 20:47:29,195 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-25 20:47:29,195 - INFO - Scheduler started
+2024-07-25 20:47:54,198 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:47:54 -04)" (scheduled at 2024-07-25 20:47:54.193538-04:00)
+2024-07-25 20:47:57,041 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-25 20:52:54 -04)" executed successfully
+2024-07-25 20:52:51,211 - INFO - Scheduler has been shut down
+2024-07-26 18:55:38,246 - INFO - HOST: 192.9.157.166
+2024-07-26 18:55:38,248 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 18:55:38,249 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 18:55:38,249 - INFO - Scheduler started
+2024-07-26 18:56:03,258 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 18:56:03 -04)" (scheduled at 2024-07-26 18:56:03.246452-04:00)
+2024-07-26 18:56:06,084 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:01:03 -04)" executed successfully
+2024-07-26 19:01:03,284 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:06:03 -04)" (scheduled at 2024-07-26 19:01:03.246452-04:00)
+2024-07-26 19:01:06,002 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:06:03 -04)" executed successfully
+2024-07-26 19:06:03,254 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:11:03 -04)" (scheduled at 2024-07-26 19:06:03.246452-04:00)
+2024-07-26 19:06:06,000 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:11:03 -04)" executed successfully
+2024-07-26 19:11:03,251 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:16:03 -04)" (scheduled at 2024-07-26 19:11:03.246452-04:00)
+2024-07-26 19:11:05,989 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:16:03 -04)" executed successfully
+2024-07-26 19:16:03,256 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:21:03 -04)" (scheduled at 2024-07-26 19:16:03.246452-04:00)
+2024-07-26 19:16:05,993 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:21:03 -04)" executed successfully
+2024-07-26 19:16:20,264 - INFO - Scheduler has been shut down
+2024-07-26 19:17:00,008 - INFO - HOST: 192.9.157.166
+2024-07-26 19:17:00,010 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:17:00,011 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:17:00,011 - INFO - Scheduler started
+2024-07-26 19:17:25,016 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:17:25 -04)" (scheduled at 2024-07-26 19:17:25.008917-04:00)
+2024-07-26 19:17:27,804 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:22:25 -04)" executed successfully
+2024-07-26 19:19:12,458 - INFO - Scheduler has been shut down
+2024-07-26 19:20:14,108 - INFO - HOST: 192.9.157.166
+2024-07-26 19:20:14,108 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:20:14,117 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:20:14,117 - INFO - Scheduler started
+2024-07-26 19:20:39,115 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:20:39 -04)" (scheduled at 2024-07-26 19:20:39.108966-04:00)
+2024-07-26 19:20:41,925 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:25:39 -04)" executed successfully
+2024-07-26 19:25:16,075 - INFO - Scheduler has been shut down
+2024-07-26 19:25:38,905 - INFO - HOST: 192.9.157.166
+2024-07-26 19:25:38,906 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:25:38,906 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:25:38,906 - INFO - Scheduler started
+2024-07-26 19:26:03,914 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:26:03 -04)" (scheduled at 2024-07-26 19:26:03.905197-04:00)
+2024-07-26 19:26:06,699 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:31:03 -04)" executed successfully
+2024-07-26 19:26:20,364 - INFO - Scheduler has been shut down
+2024-07-26 19:35:28,212 - INFO - HOST: 192.9.157.166
+2024-07-26 19:35:28,214 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:35:28,214 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:35:28,214 - INFO - Scheduler started
+2024-07-26 19:35:53,226 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:35:53 -04)" (scheduled at 2024-07-26 19:35:53.212669-04:00)
+2024-07-26 19:35:56,028 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:40:53 -04)" executed successfully
+2024-07-26 19:36:13,406 - INFO - Scheduler has been shut down
+2024-07-26 19:37:36,431 - INFO - HOST: 192.9.157.166
+2024-07-26 19:37:36,433 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:37:36,434 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:37:36,434 - INFO - Scheduler started
+2024-07-26 19:38:01,442 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:38:01 -04)" (scheduled at 2024-07-26 19:38:01.431930-04:00)
+2024-07-26 19:38:06,708 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:43:01 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.SyntaxError: syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 150, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 99, in enviar_mensajes
+    resultado = session.execute(query).fetchall()
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+[SQL: SELECT b.mensajes FROM (SELECT rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes FROM (SELECT mensaje FROM _chequeo.status_apps sa JOIN _chequeo.apps a ON sa.tag = a.tag     WHERE NOT a.disabled ORDER BY a.id) a) b LEFT JOIN (SELECT mensaje as mensajes FROM _chequeo.mensajes_enviado     ORDER BY fecha_hora DESC LIMIT 1) c ON b.mensajes = c.mensajes WHERE c.mensajes IS NULL;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-26 19:38:49,702 - INFO - Scheduler has been shut down
+2024-07-26 19:39:36,573 - INFO - HOST: 192.9.157.166
+2024-07-26 19:39:36,573 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:39:36,574 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:39:36,574 - INFO - Scheduler started
+2024-07-26 19:40:01,576 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:40:01 -04)" (scheduled at 2024-07-26 19:40:01.572103-04:00)
+2024-07-26 19:40:06,796 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:45:01 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.SyntaxError: syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 150, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 99, in enviar_mensajes
+    resultado = session.execute(query).fetchall()
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+[SQL: SELECT b.mensajes FROM (SELECT rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes FROM (SELECT mensaje FROM _chequeo.status_apps sa JOIN _chequeo.apps a ON sa.tag = a.tag     WHERE NOT a.disabled ORDER BY a.id) a) b LEFT JOIN (SELECT mensaje as mensajes FROM _chequeo.mensajes_enviado     ORDER BY fecha_hora DESC LIMIT 1) c ON b.mensajes = c.mensajes WHERE c.mensajes IS NULL;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-26 19:40:14,305 - INFO - Scheduler has been shut down
+2024-07-26 19:41:56,703 - INFO - HOST: 192.9.157.166
+2024-07-26 19:41:56,704 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:41:56,705 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:41:56,705 - INFO - Scheduler started
+2024-07-26 19:42:21,704 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:42:21 -04)" (scheduled at 2024-07-26 19:42:21.703318-04:00)
+2024-07-26 19:42:26,910 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:47:21 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.SyntaxError: syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 151, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 99, in enviar_mensajes
+    resultado = session.execute(query).fetchall()
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) syntax error at or near "mensajes"
+LINE 1: ... rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes F...
+                                                             ^
+
+[SQL: SELECT b.mensajes FROM (SELECT rtrim(ltrim((array_agg(mensaje))::text,'),')     mensajes FROM (SELECT mensaje FROM _chequeo.status_apps sa JOIN _chequeo.apps a ON sa.tag = a.tag     WHERE NOT a.disabled ORDER BY a.id) a) b LEFT JOIN (SELECT mensaje as mensajes FROM _chequeo.mensajes_enviado     ORDER BY fecha_hora DESC LIMIT 1) c ON b.mensajes = c.mensajes WHERE c.mensajes IS NULL;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-26 19:42:29,495 - INFO - Scheduler has been shut down
+2024-07-26 19:45:14,765 - INFO - HOST: 192.9.157.166
+2024-07-26 19:45:14,766 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:45:14,766 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:45:14,766 - INFO - Scheduler started
+2024-07-26 19:45:19,779 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:45:19 -04)" (scheduled at 2024-07-26 19:45:19.765679-04:00)
+2024-07-26 19:45:35,446 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:50:19 -04)" executed successfully
+2024-07-26 19:50:19,782 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:55:19 -04)" (scheduled at 2024-07-26 19:50:19.765679-04:00)
+2024-07-26 19:50:35,373 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:55:19 -04)" executed successfully
+2024-07-26 19:50:47,249 - INFO - Scheduler has been shut down
+2024-07-26 19:50:57,416 - INFO - HOST: 192.9.157.166
+2024-07-26 19:50:57,417 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 19:50:57,418 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 19:50:57,418 - INFO - Scheduler started
+2024-07-26 19:51:02,421 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:51:02 -04)" (scheduled at 2024-07-26 19:51:02.416176-04:00)
+2024-07-26 19:51:18,114 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 19:56:02 -04)" executed successfully
+2024-07-26 20:00:38,220 - WARNING - Run time of job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:01:02 -04)" was missed by 0:04:35.804798
+2024-07-26 20:01:02,423 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:06:02 -04)" (scheduled at 2024-07-26 20:01:02.416176-04:00)
+2024-07-26 20:01:07,753 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:06:02 -04)" executed successfully
+2024-07-26 20:13:08,008 - WARNING - Run time of job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:16:02 -04)" was missed by 0:02:05.592305
+2024-07-26 20:16:02,428 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:21:02 -04)" (scheduled at 2024-07-26 20:16:02.416176-04:00)
+2024-07-26 20:16:07,738 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:21:02 -04)" executed successfully
+2024-07-26 20:21:02,421 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:26:02 -04)" (scheduled at 2024-07-26 20:21:02.416176-04:00)
+2024-07-26 20:21:07,727 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:26:02 -04)" executed successfully
+2024-07-26 20:24:43,758 - INFO - Scheduler has been shut down
+2024-07-26 20:26:48,808 - INFO - HOST: 192.9.157.166
+2024-07-26 20:26:48,809 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 20:26:48,810 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 20:26:48,810 - INFO - Scheduler started
+2024-07-26 20:26:53,810 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:26:53 -04)" (scheduled at 2024-07-26 20:26:53.808936-04:00)
+2024-07-26 20:27:09,538 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:31:53 -04)" executed successfully
+2024-07-26 20:31:53,818 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:36:53 -04)" (scheduled at 2024-07-26 20:31:53.808936-04:00)
+2024-07-26 20:31:59,085 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:36:53 -04)" executed successfully
+2024-07-26 20:36:53,812 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:41:53 -04)" (scheduled at 2024-07-26 20:36:53.808936-04:00)
+2024-07-26 20:36:59,087 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:41:53 -04)" executed successfully
+2024-07-26 20:39:29,672 - INFO - Scheduler has been shut down
+2024-07-26 20:43:28,440 - INFO - HOST: 192.9.157.166
+2024-07-26 20:43:28,441 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-26 20:43:28,441 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-26 20:43:28,441 - INFO - Scheduler started
+2024-07-26 20:43:33,449 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:43:33 -04)" (scheduled at 2024-07-26 20:43:33.440071-04:00)
+2024-07-26 20:43:49,260 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-26 20:48:33 -04)" executed successfully
+2024-07-26 20:46:20,838 - INFO - Scheduler has been shut down
+2024-07-28 21:20:47,657 - INFO - HOST: 192.9.157.166
+2024-07-28 21:20:47,665 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-28 21:20:47,665 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-28 21:20:47,665 - INFO - Scheduler started
+2024-07-28 21:20:52,665 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:20:52 -04)" (scheduled at 2024-07-28 21:20:52.657299-04:00)
+2024-07-28 21:21:08,960 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:25:52 -04)" executed successfully
+2024-07-28 21:23:05,251 - INFO - Scheduler has been shut down
+2024-07-28 21:36:16,989 - INFO - HOST: 192.9.157.166
+2024-07-28 21:36:16,989 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-07-28 21:36:16,989 - INFO - Added job "scheduled_task" to job store "default"
+2024-07-28 21:36:16,989 - INFO - Scheduler started
+2024-07-28 21:36:22,006 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:36:21 -04)" (scheduled at 2024-07-28 21:36:21.989778-04:00)
+2024-07-28 21:36:44,323 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:41:21 -04)" executed successfully
+2024-07-28 21:41:22,004 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:46:21 -04)" (scheduled at 2024-07-28 21:41:21.989778-04:00)
+2024-07-28 21:41:27,282 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:46:21 -04)" executed successfully
+2024-07-28 21:46:22,000 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:51:21 -04)" (scheduled at 2024-07-28 21:46:21.989778-04:00)
+2024-07-28 21:46:27,252 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:51:21 -04)" executed successfully
+2024-07-28 21:51:21,998 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:56:21 -04)" (scheduled at 2024-07-28 21:51:21.989778-04:00)
+2024-07-28 21:51:27,221 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 21:56:21 -04)" executed successfully
+2024-07-28 21:56:21,996 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:01:21 -04)" (scheduled at 2024-07-28 21:56:21.989778-04:00)
+2024-07-28 21:56:27,250 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:01:21 -04)" executed successfully
+2024-07-28 22:01:21,999 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:06:21 -04)" (scheduled at 2024-07-28 22:01:21.989778-04:00)
+2024-07-28 22:01:27,289 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:06:21 -04)" executed successfully
+2024-07-28 22:06:22,007 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:11:21 -04)" (scheduled at 2024-07-28 22:06:21.989778-04:00)
+2024-07-28 22:06:27,240 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:11:21 -04)" executed successfully
+2024-07-28 22:11:21,992 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:16:21 -04)" (scheduled at 2024-07-28 22:11:21.989778-04:00)
+2024-07-28 22:11:27,241 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:16:21 -04)" executed successfully
+2024-07-28 22:16:21,996 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:21:21 -04)" (scheduled at 2024-07-28 22:16:21.989778-04:00)
+2024-07-28 22:16:27,221 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:21:21 -04)" executed successfully
+2024-07-28 22:21:21,992 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:26:21 -04)" (scheduled at 2024-07-28 22:21:21.989778-04:00)
+2024-07-28 22:21:27,240 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:26:21 -04)" executed successfully
+2024-07-28 22:26:21,995 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:31:21 -04)" (scheduled at 2024-07-28 22:26:21.989778-04:00)
+2024-07-28 22:26:27,222 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:31:21 -04)" executed successfully
+2024-07-28 22:31:22,000 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:36:21 -04)" (scheduled at 2024-07-28 22:31:21.989778-04:00)
+2024-07-28 22:31:27,251 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:36:21 -04)" executed successfully
+2024-07-28 22:36:21,995 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:41:21 -04)" (scheduled at 2024-07-28 22:36:21.989778-04:00)
+2024-07-28 22:36:27,252 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:41:21 -04)" executed successfully
+2024-07-28 22:41:22,003 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:46:21 -04)" (scheduled at 2024-07-28 22:41:21.989778-04:00)
+2024-07-28 22:41:27,222 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:46:21 -04)" executed successfully
+2024-07-28 22:46:21,996 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:51:21 -04)" (scheduled at 2024-07-28 22:46:21.989778-04:00)
+2024-07-28 22:46:27,273 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:51:21 -04)" executed successfully
+2024-07-28 22:51:21,995 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:56:21 -04)" (scheduled at 2024-07-28 22:51:21.989778-04:00)
+2024-07-28 22:51:27,261 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 22:56:21 -04)" executed successfully
+2024-07-28 22:56:22,000 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 23:01:21 -04)" (scheduled at 2024-07-28 22:56:21.989778-04:00)
+2024-07-28 22:56:27,280 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 23:01:21 -04)" executed successfully
+2024-07-28 23:01:21,998 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 23:06:21 -04)" (scheduled at 2024-07-28 23:01:21.989778-04:00)
+2024-07-28 23:01:27,275 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-07-28 23:06:21 -04)" executed successfully
+2024-08-07 19:21:07,183 - INFO - HOST: 192.9.157.166
+2024-08-07 19:21:07,183 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 19:21:07,183 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 19:21:07,183 - INFO - Scheduler started
+2024-08-07 19:21:12,193 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:21:12 -04)" (scheduled at 2024-08-07 19:21:12.183714-04:00)
+2024-08-07 19:21:17,612 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:26:12 -04)" executed successfully
+2024-08-07 19:21:43,525 - INFO - Scheduler has been shut down
+2024-08-07 19:23:16,324 - INFO - HOST: localhost
+2024-08-07 19:23:16,324 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 19:23:16,326 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 19:23:16,326 - INFO - Scheduler started
+2024-08-07 19:23:21,333 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:23:21 -04)" (scheduled at 2024-08-07 19:23:21.324730-04:00)
+2024-08-07 19:23:21,454 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:28:21 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.SyntaxError: subquery in FROM must have an alias
+LINE 1: ...mulario))::text,'{'),'}') as formularios FROM     (SELECT up...
+                                                             ^
+HINT:  For example, FROM (SELECT ...) [AS] foo.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 154, in realiza_chequeos
+    revisa_orden_viajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 38, in revisa_orden_viajes
+    resultado = session.execute(query_consulta)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2306, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2200, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.SyntaxError) subquery in FROM must have an alias
+LINE 1: ...mulario))::text,'{'),'}') as formularios FROM     (SELECT up...
+                                                             ^
+HINT:  For example, FROM (SELECT ...) [AS] foo.
+
+[SQL: SELECT ordenes FROM (    SELECT rtrim(ltrim((array_agg(delivery_order))::text,'{'),'}')     as ordenes FROM (SELECT * FROM (SELECT delivery_order,position(formularios IN form_orden)     as posicion, formularios, form_orden FROM (SELECT delivery_order,     rtrim(ltrim((array_agg(eto.formulario))::text,'{'),'}') as formularios,	    (SELECT rtrim(ltrim((array_agg(formulario))::text,'{'),'}') as formularios FROM     (SELECT upper(trim(f.titulo)) formulario FROM _chequeo.orden_viajes ov JOIN jotform.formularios f     ON ov.form_id = f.id	ORDER BY orden)) as form_orden     FROM     (SELECT eto.delivery_order, eto.fecha_hora_local, upper(trim(f.titulo)) as formulario FROM     (SELECT eto.* FROM jotform.e_to_open eto JOIN (SELECT DISTINCT delivery_order FROM jotform.e_to_open eto     WHERE eto.fecha_hora_local > substring((now()::timestamp at time zone 'utc' at time zone     'America/Los_Angeles')::text,1,19)::timestamp - '1 day'::interval) eto_1 USING (delivery_order)     WHERE UPPER(eto.estado) <> 'ANULADO') eto JOIN jotform.envios e ON eto.id_envio = e.id JOIN jotform.formularios     f ON e.form_id = f.id JOIN _chequeo.orden_viajes ov ON f.id = ov.form_id ORDER BY delivery_order,     fecha_hora_local) as eto GROUP BY delivery_order) b) c WHERE posicion <> 1) z) y WHERE ordenes IS NOT NULL]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-08-07 19:23:35,583 - INFO - Scheduler has been shut down
+2024-08-07 19:46:46,355 - INFO - HOST: localhost
+2024-08-07 19:46:46,355 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 19:46:46,355 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 19:46:46,355 - INFO - Scheduler started
+2024-08-07 19:46:51,361 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:46:51 -04)" (scheduled at 2024-08-07 19:46:51.355166-04:00)
+2024-08-07 19:47:03,655 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:51:51 -04)" executed successfully
+2024-08-07 19:47:37,034 - INFO - Scheduler has been shut down
+2024-08-07 19:55:47,083 - INFO - HOST: localhost
+2024-08-07 19:55:47,083 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 19:55:47,089 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 19:55:47,089 - INFO - Scheduler started
+2024-08-07 19:55:52,085 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 19:55:52 -04)" (scheduled at 2024-08-07 19:55:52.083569-04:00)
+2024-08-07 19:55:52,214 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:00:52 -04)" executed successfully
+2024-08-07 19:56:13,542 - INFO - Scheduler has been shut down
+2024-08-07 20:04:36,246 - INFO - HOST: localhost
+2024-08-07 20:04:36,247 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:04:36,247 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:04:36,247 - INFO - Scheduler started
+2024-08-07 20:04:41,257 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:04:41 -04)" (scheduled at 2024-08-07 20:04:41.246242-04:00)
+2024-08-07 20:04:41,337 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:09:41 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 192, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:04:59,081 - INFO - Scheduler has been shut down
+2024-08-07 20:05:55,507 - INFO - HOST: localhost
+2024-08-07 20:05:55,507 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:05:55,508 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:05:55,508 - INFO - Scheduler started
+2024-08-07 20:06:00,510 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:06:00 -04)" (scheduled at 2024-08-07 20:06:00.506575-04:00)
+2024-08-07 20:06:00,591 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:11:00 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 192, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:06:18,535 - INFO - Scheduler has been shut down
+2024-08-07 20:09:55,935 - INFO - HOST: localhost
+2024-08-07 20:09:55,936 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:09:55,937 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:09:55,937 - INFO - Scheduler started
+2024-08-07 20:10:00,941 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:10:00 -04)" (scheduled at 2024-08-07 20:10:00.935672-04:00)
+2024-08-07 20:10:01,029 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:15:00 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 194, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:10:14,832 - INFO - Scheduler has been shut down
+2024-08-07 20:10:51,798 - INFO - HOST: localhost
+2024-08-07 20:10:51,799 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:10:51,800 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:10:51,800 - INFO - Scheduler started
+2024-08-07 20:10:56,809 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:10:56 -04)" (scheduled at 2024-08-07 20:10:56.798872-04:00)
+2024-08-07 20:10:56,887 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:15:56 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 197, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:11:16,804 - INFO - Scheduler has been shut down
+2024-08-07 20:11:46,369 - INFO - HOST: localhost
+2024-08-07 20:11:46,369 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:11:46,370 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:11:46,370 - INFO - Scheduler started
+2024-08-07 20:11:51,380 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:11:51 -04)" (scheduled at 2024-08-07 20:11:51.369932-04:00)
+2024-08-07 20:11:51,480 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:16:51 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 198, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:12:01,236 - INFO - Scheduler has been shut down
+2024-08-07 20:12:14,365 - INFO - HOST: localhost
+2024-08-07 20:12:14,366 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:12:14,368 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:12:14,368 - INFO - Scheduler started
+2024-08-07 20:12:19,380 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:12:19 -04)" (scheduled at 2024-08-07 20:12:19.365852-04:00)
+2024-08-07 20:12:19,461 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:17:19 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 198, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 130, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:12:27,321 - INFO - Scheduler has been shut down
+2024-08-07 20:12:55,035 - INFO - HOST: localhost
+2024-08-07 20:12:55,035 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:12:55,036 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:12:55,036 - INFO - Scheduler started
+2024-08-07 20:13:00,045 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:13:00 -04)" (scheduled at 2024-08-07 20:13:00.035966-04:00)
+2024-08-07 20:13:00,127 - ERROR - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:18:00 -04)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\.venv\Lib\site-packages\apscheduler\executors\base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\app.py", line 17, in scheduled_task
+    realiza_chequeos()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 201, in realiza_chequeos
+    enviar_mensajes()
+  File "C:\Users\hecto\PycharmProjects\lmlogistics\cheque-procesos\src\index.py", line 133, in enviar_mensajes
+    query = text("SELECT replace(b.mensajes, '","', chr(13) || chr(10) || chr(13) || chr(10)) as mensajes, \
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: text() takes 1 positional argument but 2 were given
+2024-08-07 20:13:35,621 - INFO - Scheduler has been shut down
+2024-08-07 20:15:01,252 - INFO - HOST: localhost
+2024-08-07 20:15:01,252 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:15:01,254 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:15:01,254 - INFO - Scheduler started
+2024-08-07 20:15:06,267 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:15:06 -04)" (scheduled at 2024-08-07 20:15:06.252925-04:00)
+2024-08-07 20:15:16,716 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:20:06 -04)" executed successfully
+2024-08-07 20:16:38,553 - INFO - Scheduler has been shut down
+2024-08-07 20:19:09,009 - INFO - HOST: localhost
+2024-08-07 20:19:09,009 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:19:09,010 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:19:09,010 - INFO - Scheduler started
+2024-08-07 20:19:14,017 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:19:14 -04)" (scheduled at 2024-08-07 20:19:14.009055-04:00)
+2024-08-07 20:19:24,458 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:24:14 -04)" executed successfully
+2024-08-07 20:19:29,646 - INFO - Scheduler has been shut down
+2024-08-07 20:21:12,977 - INFO - HOST: localhost
+2024-08-07 20:21:12,977 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:21:12,978 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:21:12,978 - INFO - Scheduler started
+2024-08-07 20:21:17,987 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:21:17 -04)" (scheduled at 2024-08-07 20:21:17.977352-04:00)
+2024-08-07 20:21:18,104 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:26:17 -04)" executed successfully
+2024-08-07 20:22:12,620 - INFO - Scheduler has been shut down
+2024-08-07 20:22:17,704 - INFO - HOST: localhost
+2024-08-07 20:22:17,704 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:22:17,705 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:22:17,705 - INFO - Scheduler started
+2024-08-07 20:22:22,711 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:22:22 -04)" (scheduled at 2024-08-07 20:22:22.703122-04:00)
+2024-08-07 20:22:22,826 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:27:22 -04)" executed successfully
+2024-08-07 20:22:51,322 - INFO - Scheduler has been shut down
+2024-08-07 20:23:35,502 - INFO - HOST: localhost
+2024-08-07 20:23:35,502 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:23:35,503 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:23:35,503 - INFO - Scheduler started
+2024-08-07 20:23:40,518 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:23:40 -04)" (scheduled at 2024-08-07 20:23:40.502996-04:00)
+2024-08-07 20:23:50,951 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:28:40 -04)" executed successfully
+2024-08-07 20:28:40,508 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:33:40 -04)" (scheduled at 2024-08-07 20:28:40.502996-04:00)
+2024-08-07 20:28:50,901 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:33:40 -04)" executed successfully
+2024-08-07 20:29:03,923 - INFO - Scheduler has been shut down
+2024-08-07 20:37:42,017 - INFO - HOST: localhost
+2024-08-07 20:37:42,017 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:37:42,018 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:37:42,018 - INFO - Scheduler started
+2024-08-07 20:37:47,024 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:37:47 -04)" (scheduled at 2024-08-07 20:37:47.017842-04:00)
+2024-08-07 20:37:47,102 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:42:47 -04)" executed successfully
+2024-08-07 20:37:50,634 - INFO - Scheduler has been shut down
+2024-08-07 20:48:51,677 - INFO - HOST: localhost
+2024-08-07 20:48:51,678 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:48:51,679 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:48:51,679 - INFO - Scheduler started
+2024-08-07 20:48:56,692 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:48:56 -04)" (scheduled at 2024-08-07 20:48:56.677799-04:00)
+2024-08-07 20:48:56,773 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:53:56 -04)" executed successfully
+2024-08-07 20:49:26,992 - INFO - Scheduler has been shut down
+2024-08-07 20:50:00,740 - INFO - HOST: localhost
+2024-08-07 20:50:00,741 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:50:00,742 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:50:00,742 - INFO - Scheduler started
+2024-08-07 20:50:05,754 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:50:05 -04)" (scheduled at 2024-08-07 20:50:05.739200-04:00)
+2024-08-07 20:50:16,232 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:55:05 -04)" executed successfully
+2024-08-07 20:52:27,284 - INFO - Scheduler has been shut down
+2024-08-07 20:52:29,789 - INFO - HOST: localhost
+2024-08-07 20:52:29,789 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2024-08-07 20:52:29,791 - INFO - Added job "scheduled_task" to job store "default"
+2024-08-07 20:52:29,791 - INFO - Scheduler started
+2024-08-07 20:52:34,805 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:52:34 -04)" (scheduled at 2024-08-07 20:52:34.789774-04:00)
+2024-08-07 20:52:45,310 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 20:57:34 -04)" executed successfully
+2024-08-07 20:57:34,797 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 21:02:34 -04)" (scheduled at 2024-08-07 20:57:34.789774-04:00)
+2024-08-07 20:57:34,922 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 21:02:34 -04)" executed successfully
+2024-08-07 21:02:34,796 - INFO - Running job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 21:07:34 -04)" (scheduled at 2024-08-07 21:02:34.789774-04:00)
+2024-08-07 21:02:34,926 - INFO - Job "scheduled_task (trigger: interval[0:05:00], next run at: 2024-08-07 21:07:34 -04)" executed successfully
+2024-08-07 21:09:12,554 - INFO - Scheduler has been shut down
