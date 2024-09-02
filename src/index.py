@@ -93,6 +93,57 @@ def revisa_error_e2o():
     except Exception as e:
         print(e)
 
+
+def revisa_planificacion():
+    engine = create_engine(conexion).execution_options(autocommit=True)
+    sessionMaker = sessionmaker(bind=engine)
+    session = sessionMaker()
+    query_consulta = text("SELECT \
+    CASE \
+        WHEN \
+            substring((now()::timestamp at time zone 'utc' \
+            at time zone 'America/Los_Angeles')::text,1,19)::time < '16:00:00'::time \
+        THEN true \
+        ELSE \
+            CASE \
+            WHEN cuenta > 0 THEN true \
+            ELSE false \
+        END \
+    END as valor \
+    FROM \
+    (SELECT COUNT(id) AS cuenta	FROM jotform.planificacion \
+    WHERE delivery_date = (SELECT substring(((now()::timestamp at time zone 'utc' \
+    at time zone 'America/Los_Angeles') + '1 day'::interval)::text,1,19)::date)) b")
+    try:
+        resultado = session.execute(query_consulta)
+        resultado = resultado.fetchall()
+        hay = False
+        for row in resultado:
+            # si row[0] es True es correcto
+            if row[0] == True:
+                hay = True
+            else:
+                hay = False
+        if not hay:
+            query_insert = text("DELETE FROM _chequeo.status_apps WHERE tag = 'PLAN'; \
+                INSERT INTO _chequeo.status_apps(tag, estado, mensaje, fecha_hora) \
+                VALUES ('PLAN', 'ERROR', 'Falta planificación', \
+                substring((now()::timestamp at time zone 'utc' \
+                 at time zone 'America/Los_Angeles')::text,1,19)::timestamp)")
+            session.execute(query_insert)
+        else:
+            query_insert = text("DELETE FROM _chequeo.status_apps WHERE tag = 'PLAN'; \
+                INSERT INTO _chequeo.status_apps(tag, estado, mensaje, fecha_hora) \
+                VALUES ('PLAN', 'OK', 'PLANIFICACION OK', \
+                substring((now()::timestamp at time zone 'utc' \
+                 at time zone 'America/Los_Angeles')::text,1,19)::timestamp)")
+            session.execute(query_insert)
+        session.commit()
+        session.close()
+    except Exception as e:
+        print(e)
+
+
 def estado_proceso():
     # obtener la cantidad de registros con estado NUEVO en la tabla EToOpen
     engine2 = create_engine(conexion).execution_options(autocommit=True)
@@ -184,9 +235,17 @@ def revisa_atraso():
 
 
 def enviar_whatsapp(fono, msg):
-    url = "http://localhost:3002/send-message"
+    # url = "http://localhost:3002/send-message"
+    # url = "http://localhost:3001/lead"
+    url = "http://localhost:3008/v1/messages"
+
+    # IP para cuando va a produccion
+    # url = "http://172.17.0.3:3008/send-message"
+
     message = msg + " \n\n --Este mensaje fue enviado automáticamente por el sistema de chequeo de procesos--"
-    data = {"fono": fono, "msg": message}
+    # data = {"fono": fono, "msg": message}
+    # data = {"phone": fono, "message": message}
+    data = {"number": fono, "message": message}
     headers = {"Content-Type": "application/json"}
     print(data)
     response = requests.post(url, json=data, headers=headers)
@@ -198,6 +257,7 @@ def enviar_whatsapp(fono, msg):
 def realiza_chequeos():
     revisa_orden_viajes()
     revisa_error_e2o()
+    revisa_planificacion()
     enviar_mensajes()
 
 
